@@ -163,7 +163,7 @@ export const MyCanvas = ({
     >
       <Suspense fallback={<Spinner />}>
         <Canvas
-          camera={{ fov: 75, position: [0, 70, -110], zoom: 17 }}
+          camera={{ fov: 75, position: [0, 70, -110], zoom: 23 }}
           style={{ height: `${canvasHeight}px`, width: `${canvasWidth}px` }}
         >
           <ambientLight />
