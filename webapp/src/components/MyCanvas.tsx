@@ -103,33 +103,33 @@ export const MyCanvas = ({
       directionX === DirectionX.Right &&
       left + canvasWidth < frameDimensions.width
     ) {
-      setLeft(left + 1);
+      setLeft(left + 0.5);
     }
 
     if (
       directionX === DirectionX.Right &&
       left + canvasWidth === frameDimensions.width
     ) {
-      setLeft(left - 1);
+      setLeft(left - 0.5);
       setDirectionX(DirectionX.Left);
     }
 
     if (directionX === DirectionX.Left && left > 0) {
-      setLeft(left - 1);
+      setLeft(left - 0.5);
     }
 
     if (directionX === DirectionX.Left && left === 0) {
-      setLeft(left + 1);
+      setLeft(left + 0.5);
       setDirectionX(DirectionX.Right);
     }
 
     // VERTICAL MOVEMENT
     if (directionY === DirectionY.Top && top > 0) {
-      setTop(top - 2);
+      setTop(top - 0.5);
     }
 
     if (directionY === DirectionY.Top && top <= 0) {
-      setTop(top + 2);
+      setTop(top + 0.5);
       setDirectionY(DirectionY.Bottom);
     }
 
@@ -137,14 +137,14 @@ export const MyCanvas = ({
       directionY === DirectionY.Bottom &&
       top + canvasHeight < frameDimensions.height
     ) {
-      setTop(top + 2);
+      setTop(top + 0.5);
     }
 
     if (
       directionY === DirectionY.Bottom &&
       top + canvasHeight >= frameDimensions.height
     ) {
-      setTop(top - 2);
+      setTop(top - 0.5);
       setDirectionY(DirectionY.Top);
     }
   };
@@ -163,7 +163,7 @@ export const MyCanvas = ({
     >
       <Suspense fallback={<Spinner />}>
         <Canvas
-          camera={{ fov: 75, position: [0, 70, -110], zoom: 23 }}
+          camera={{ fov: 75, position: [80, 70, 110], zoom: 23 }}
           style={{ height: `${canvasHeight}px`, width: `${canvasWidth}px` }}
         >
           <ambientLight />

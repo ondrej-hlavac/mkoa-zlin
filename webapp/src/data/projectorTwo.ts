@@ -1,9 +1,5 @@
 export const projectorTwo = [
   {
-    objUrl: "zlin/Weed_cosi_Lowpoly/Weed_cosi_Lowpoly.obj",
-    mtlUrl: "zlin/Weed_cosi_Lowpoly/Weed_cosi_Lowpoly.mtl",
-  },
-  {
     objUrl: "zlin/Absolute_Vodka_Lowpoly/Absolute_Vodka_Lowpoly.obj",
     mtlUrl: "zlin/Absolute_Vodka_Lowpoly/Absolute_Vodka_Lowpoly.mtl",
   },
@@ -38,5 +34,29 @@ export const projectorTwo = [
   {
     objUrl: "zlin/Lucky_Bands_Lowpoly/Lucky_Bands_Lowpoly.obj",
     mtlUrl: "zlin/Lucky_Bands_Lowpoly/Lucky_Bands_Lowpoly.mtl",
+  },
+  {
+    objUrl: "zlin/Skolni_rad_Lowpoly/Skolni_rad_Lowpoly.obj",
+    mtlUrl: "zlin/Skolni_rad_Lowpoly/Skolni_rad_Lowpoly.mtl",
+  },
+  {
+    objUrl: "zlin/Sound_Czech_Lowpoly/Sound_Czech_Lowpoly.obj",
+    mtlUrl: "zlin/Sound_Czech_Lowpoly/Sound_Czech_Lowpoly.mtl",
+  },
+  {
+    objUrl: "zlin/Viceroy_White_Lowpoly/Viceroy_White_Lowpoly.obj",
+    mtlUrl: "zlin/Viceroy_White_Lowpoly/Viceroy_White_Lowpoly.mtl",
+  },
+  {
+    objUrl: "zlin/Zubr_Lowpoly/Zubr_Lowpoly.obj",
+    mtlUrl: "zlin/Zubr_Lowpoly/Zubr_Lowpoly.mtl",
+  },
+  {
+    objUrl: "zlin/Viceroy_Lowpoly/Viceroy_Lowpoly.obj",
+    mtlUrl: "zlin/Viceroy_Lowpoly/Viceroy_Lowpoly.mtl",
+  },
+  {
+    objUrl: "zlin/Ruzova_Masle_Lowpoly/Ruzova_Masle_Lowpoly.obj",
+    mtlUrl: "zlin/Ruzova_Masle_Lowpoly/Ruzova_Masle_Lowpoly.mtl",
   },
 ];

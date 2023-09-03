@@ -22,11 +22,14 @@ export const ProjectionModel = ({
   });
 
   return (
-    <primitive
-      object={obj}
-      rotation-y={rotationX}
-      rotation-x={rotationY}
-      position={[0, 0, 0]}
-    />
+    <mesh>
+      <primitive
+        object={obj}
+        rotation-y={rotationX}
+        rotation-x={rotationY}
+        position={[0, 0, 0]}
+        material={mtl}
+      />
+    </mesh>
   );
 };
