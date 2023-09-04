@@ -52,8 +52,8 @@ export const projectorTwo = [
     mtlUrl: "zlin/Zubr_Lowpoly/Zubr_Lowpoly.mtl",
   },
   {
-    objUrl: "zlin/Viceroy_Lowpoly/Viceroy_Lowpoly.obj",
-    mtlUrl: "zlin/Viceroy_Lowpoly/Viceroy_Lowpoly.mtl",
+    objUrl: "zlin/West_Silver_Lowpoly/West_Silver_Lowpoly.obj",
+    mtlUrl: "zlin/West_Silver_Lowpoly/West_Silver_Lowpoly.mtl",
   },
   {
     objUrl: "zlin/Ruzova_Masle_Lowpoly/Ruzova_Masle_Lowpoly.obj",

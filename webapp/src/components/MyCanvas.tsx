@@ -85,7 +85,7 @@ export const MyCanvas = ({
 
   const rotateModel = () => {
     if (rotation <= 360) {
-      setRotation(rotation + 0.001);
+      setRotation(rotation + 0.0001);
     } else {
       setRotation(0);
     }
@@ -103,33 +103,33 @@ export const MyCanvas = ({
       directionX === DirectionX.Right &&
       left + canvasWidth < frameDimensions.width
     ) {
-      setLeft(left + 0.5);
+      setLeft(left + 0.2);
     }
 
     if (
       directionX === DirectionX.Right &&
       left + canvasWidth === frameDimensions.width
     ) {
-      setLeft(left - 0.5);
+      setLeft(left - 0.2);
       setDirectionX(DirectionX.Left);
     }
 
     if (directionX === DirectionX.Left && left > 0) {
-      setLeft(left - 0.5);
+      setLeft(left - 0.2);
     }
 
-    if (directionX === DirectionX.Left && left === 0) {
-      setLeft(left + 0.5);
+    if (directionX === DirectionX.Left && left <= 0) {
+      setLeft(left + 0.2);
       setDirectionX(DirectionX.Right);
     }
 
     // VERTICAL MOVEMENT
     if (directionY === DirectionY.Top && top > 0) {
-      setTop(top - 0.5);
+      setTop(top - 0.2);
     }
 
     if (directionY === DirectionY.Top && top <= 0) {
-      setTop(top + 0.5);
+      setTop(top + 0.2);
       setDirectionY(DirectionY.Bottom);
     }
 
@@ -137,14 +137,14 @@ export const MyCanvas = ({
       directionY === DirectionY.Bottom &&
       top + canvasHeight < frameDimensions.height
     ) {
-      setTop(top + 0.5);
+      setTop(top + 0.2);
     }
 
     if (
       directionY === DirectionY.Bottom &&
       top + canvasHeight >= frameDimensions.height
     ) {
-      setTop(top - 0.5);
+      setTop(top - 0.2);
       setDirectionY(DirectionY.Top);
     }
   };
